@@ -1,0 +1,89 @@
+.container
+{
+    background-color: #a7bcff;
+    height: 200vh;
+    position: relative;
+}
+.formContainer
+{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: auto;
+    width: 30%;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+h1{
+    padding-left: 35%;
+}
+.formContainer button
+{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: skyblue;
+    width: 70px;
+    margin-left: 170px;
+}
+input
+{
+   padding: 10px;
+   outline: none;
+   border: none;
+   background-color: #d2ebf4;
+}
+input:focus
+{
+    box-shadow: 3px 4px 25px 4px #a7bcff;
+}
+.saveContainer
+{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    height: auto;
+    width: 37%;
+    background-color: azure;
+}
+tr
+{
+  display: flex;
+  gap: 100px;
+  padding: 20px;
+  border-bottom: 1px solid rgb(110, 195, 195);
+  text-align: center;
+}
+.btn-delete
+{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: rgb(201, 78, 78);
+    width: 70px;  
+    color: azure; 
+}
+#alert
+{
+    color: red;
+    padding-left: 120px;
+}
+#success
+{
+    background-color: rgb(94, 173, 94);
+    padding: 7px;
+    color: azure;
+    text-align: center;
+}
+#remove
+{
+    background-color: rgb(205, 51, 51);
+    padding: 7px;
+    color: azure;
+    text-align: center;
+}
