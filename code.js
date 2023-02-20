@@ -91,11 +91,11 @@ class Store {
       localStorage.setItem('books', JSON.stringify(books));
     }
   
-    static removeBook(isbn) {
+    static removeBook(bookid) {
       const books = Store.getBooks();
   
       books.forEach((book, index) => {
-        if(book.isbn === isbn) {
+        if(book.bookid === bookid) {
           books.splice(index, 1);
         }
       });
@@ -143,7 +143,10 @@ document.getElementById('formContainer').addEventListener('submit' , e => {
 //Event : Remove a book
 
 document.getElementById('book-list').addEventListener('click' , e => {
-    Store.removeBook();
+    // remove from storage
+    
+    Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
+
     UI.deleteBook(e.target);
 })
 
